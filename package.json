@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "webpack",
-    "deploy": "webpack -p && surge -d sprint-poker-react.surge.sh -p ./dist",
+    "deploy": "webpack -p && surge -p ./dist -d sprintpoker.io",
     "server": "webpack-dev-server"
   },
   "dependencies": {
