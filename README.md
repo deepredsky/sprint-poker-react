@@ -1,6 +1,6 @@
 # Sprint Poker Frontend
 
-Frontend for [sprint-poker](https://github.com/elpassion/sprint-poker) written in [React], [Reflux] and [CofeeScript]
+Frontend for [Sprint Poker] written in [React], [Reflux] and [CofeeScript]
 
 http://sprintpoker.io
 
@@ -26,6 +26,7 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 
 Sprint Poker is released under the MIT License. See the [LICENSE] file for further details.
 
+[Sprint Poker]: https://github.com/elpassion/sprint-poker
 [React]: http://facebook.github.io/react
 [Reflux]: https://github.com/reflux/refluxjs
 [CofeeScript]: http://coffeescript.org/
