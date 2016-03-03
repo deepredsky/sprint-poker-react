@@ -35,7 +35,7 @@ Store = Reflux.createStore
 
   init: ->
     @currentGame = null
-    @socket = new Socket("//sprintpoker.io/ws")
+    @socket = new Socket("//api.sprintpoker.io/ws")
     @socket.onOpen (ev)  =>
       @errors.socket = null
       @emit()
