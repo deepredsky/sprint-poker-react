@@ -1,6 +1,6 @@
 require 'bootstrap-sass!./../../bootstrap-sass.config.js'
 require 'file?name=[name].[ext]!../index.html'
-require 'file?name=[name].[ext]!../index.html'
+require 'file?name=[name].[ext]!../assets/images/favicon.png'
 
 React = require 'react'
 { Router, Route, Redirect } = require 'react-router'
