@@ -10,7 +10,7 @@ http://sprintpoker.io
 - Install npm dependencies with `npm install`
 - Run server with `npm run server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Now you can visit [`localhost:8080`](http://localhost:4000) from your browser.
 
 ## Contributing
 
