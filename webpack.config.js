@@ -19,6 +19,12 @@ module.exports = {
     colors: true,
     reasons: true
   },
+  devServer: {
+    contentBase: './dist',
+    historyApiFallback: {
+      index: '/200.html'
+    },
+  },
   module: {
     loaders: [
       { test: /\.js$/,                         loader: 'babel-loader?stage=0', exclude: /(node_modules)/ },
