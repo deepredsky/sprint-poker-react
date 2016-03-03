@@ -10,9 +10,7 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.cjsx', '.coffee'],
     modulesDirectories: [
-      './node_modules',
-      './deps/phoenix/web/static/js',
-      './deps/phoenix_html/web/static/js'
+      './node_modules'
     ],
   },
   debug: true,
