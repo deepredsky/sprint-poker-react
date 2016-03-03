@@ -6,6 +6,7 @@ http://sprintpoker.io
 
 ## Setup
 
+- Install [sprint-poker](https://github.com/elpassion/sprint-poker) backend
 - Install npm dependencies with `npm install`
 - Run server with `npm run server`
 
