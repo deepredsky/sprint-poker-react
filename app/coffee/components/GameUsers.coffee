@@ -36,7 +36,7 @@ GameUsers = React.createClass
             </td>
             { if @state.gameState.name != 'none'
               <td className="points text-center">
-                { @state.gameState.votes[user.id] || 'waiting ...' }
+                { @state.gameState.votes[user.id] || '...' }
               </td>
             }
           </tr>
