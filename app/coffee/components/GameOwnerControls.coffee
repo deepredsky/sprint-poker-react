@@ -19,7 +19,7 @@ GameOwnerControls = React.createClass
     Actions.startVoting()
 
   onVoteAgainClick: ->
-    Actions.startVoting(@state.gameState.currentTicketId)
+    Actions.startVoting(@state.gameState.current_ticket_id)
 
   onTicketPointsChange: (e) ->
     Actions.changeTicketPoints(e.target.value)
@@ -33,7 +33,7 @@ GameOwnerControls = React.createClass
                 <td>Final estimation</td>
                 <td className="points">
                   <select className="input-gray"
-                    value={ @state.game.tickets[@state.gameState.currentTicketId].points }
+                    value={ @state.game.tickets[@state.gameState.current_ticket_id].points }
                     onChange={ @onTicketPointsChange }
                     disabled={ @props.disabled }
                   >
@@ -67,5 +67,3 @@ GameOwnerControls = React.createClass
   </div>
 
 module.exports = GameOwnerControls
-
-

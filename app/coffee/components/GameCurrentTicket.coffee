@@ -10,11 +10,11 @@ GameCurrentTicket = React.createClass
   ]
 
   render: ->
-    ticketIdx = Object.keys(@state.game.tickets).indexOf(String(@state.gameState.currentTicketId)) + 1
+    ticketIdx = Object.keys(@state.game.tickets).indexOf(String(@state.gameState.current_ticket_id)) + 1
     if @state.gameState.name != 'none'
       <caption className="current-ticket">
         <span className="id">{ ticketIdx }</span>
-        { @state.game.tickets[@state.gameState.currentTicketId].name }
+        { @state.game.tickets[@state.gameState.current_ticket_id].name }
         <span className="counter">
           &nbsp;({ ticketIdx }/{ Object.keys(@state.game.tickets).length })
         </span>
@@ -23,4 +23,3 @@ GameCurrentTicket = React.createClass
       <div/>
 
 module.exports = GameCurrentTicket
-

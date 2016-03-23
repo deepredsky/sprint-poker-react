@@ -27,4 +27,3 @@ Errors = React.createClass
     </div>
 
 module.exports = Errors
-

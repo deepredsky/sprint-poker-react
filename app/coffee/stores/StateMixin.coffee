@@ -7,7 +7,7 @@ StateMixin =
   init: ->
     @gameState = {
       name: 'none'
-      currentTicketId: null
+      current_ticket_id: null
       votes: {}
     }
 
@@ -44,6 +44,6 @@ StateMixin =
     values = _.map @gameState.votes, (vote) -> vote
     uniq = _.uniq values
     if uniq.length == 1
-      @game.tickets[@gameState.currentTicketId].points = uniq[0]
+      @game.tickets[@gameState.current_ticket_id].points = uniq[0]
 
 module.exports = StateMixin

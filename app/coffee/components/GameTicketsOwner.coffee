@@ -38,7 +38,7 @@ GameTickets = React.createClass
       </caption>
       <tbody>
         { for ticketId, ticket of @state.game.tickets
-          <tr key={ ticket.id } className={ if @state.gameState.currentTicketId == ticket.id then "selected" }>
+          <tr key={ ticket.id } className={ if @state.gameState.current_ticket_id == ticket.id then "selected" }>
             <th>
               { Object.keys(@state.game.tickets).indexOf(ticketId) + 1 }
             </th>
@@ -57,7 +57,7 @@ GameTickets = React.createClass
               { ticket.points }
             </td>
             <td className="buttons">
-              <button className="btn btn-gray" data-id={ticket.id} onClick={ @onDeleteTicket } disabled={ if @state.gameState.currentTicketId == ticket.id then true }>Delete</button>
+              <button className="btn btn-gray" data-id={ticket.id} onClick={ @onDeleteTicket } disabled={ if @state.gameState.current_ticket_id == ticket.id then true }>Delete</button>
             </td>
           </tr>
         }
