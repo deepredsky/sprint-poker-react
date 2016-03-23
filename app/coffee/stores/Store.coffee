@@ -64,7 +64,7 @@ Store = Reflux.createStore
       @channel.leave()
       @channel = null
 
-    @channel = @socket.channel(channel, {game_id: gameId})
+    @channel = @socket.channel(channel, {game_id: gameId || null})
     @channel.join()
     event() for event in @channelEvents
 
